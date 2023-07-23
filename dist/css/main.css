@@ -9,7 +9,7 @@
   margin-top: 1.2rem;
   width: 8rem;
   height: 2px;
-  background-color: rgb(255, 0, 0);
+  background-color: #ff0000;
 }
 
 .btn-dark, .btn-light {
@@ -198,23 +198,16 @@ img {
   text-transform: uppercase;
 }
 #header-home .header-content h1 .title-name {
-  color: rgb(255, 0, 0);
+  color: #ff0000;
 }
 #header-home .header-content .txt-type {
-  color: rgb(255, 0, 0);
+  color: #ff0000;
   font-weight: 150;
 }
 #header-about {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 40vh;
   position: relative;
-}
-#header-about .down {
-  width: 30px;
-  height: 50px;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
 }
 #header-about .top {
   background: transparent;
@@ -267,9 +260,6 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-#about .row img {
-  width: 300px;
-}
 #about .row .column {
   padding: 1rem 3rem;
 }
@@ -277,7 +267,6 @@ img {
   width: 400px;
 }
 #about .row .column-2 {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -294,12 +283,13 @@ img {
   margin-top: 1.3rem;
 }
 #about .row .column-2 h4 {
-  color: rgb(255, 0, 0);
+  color: #ff0000;
   font-size: 1.3rem;
 }
 
 #work {
-  text-align: center;
+  max-width: 1280px;
+  margin: 1.5rem auto;
 }
 #work .work-header {
   display: flex;
@@ -308,27 +298,24 @@ img {
   align-items: center;
 }
 #work .work-items {
-  max-width: 1280px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  margin: 1.5rem auto;
+  display: flex;
+  padding: 0 4px;
+  margin-top: 1rem;
 }
 #work .work-items .item {
-  width: 400px;
-  height: 300px;
-  border: 2px solid #020202;
-  transition: 0.5s;
+  margin: 1rem 0.3rem;
   cursor: pointer;
 }
 #work .work-items .item img {
+  border: 2px solid #020202;
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
   object-position: center top;
 }
-#work .work-items .item:hover {
-  transform: scale(1.1);
+#work .work-items .item img:hover {
+  opacity: 0.6;
+  transform: scale(1.02);
 }
 #work .modal {
   position: fixed;
@@ -372,7 +359,7 @@ img {
   color: #fff;
 }
 #work .modal-body h2 {
-  color: rgb(255, 0, 0);
+  color: #ff0000;
   font-size: 2rem;
 }
 #work .modal-body .read-more {
@@ -416,43 +403,47 @@ img {
 
 #footer {
   background-color: #020202;
-  height: 300px;
+  height: 250px;
   text-align: center;
+  overflow: hidden;
+}
+#footer p {
+  font-size: 1rem;
 }
 #footer .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 1rem 0;
-}
-#footer .footer-details {
-  border-right: 2px solid rgb(255, 0, 0);
+  padding: 0.8rem 0;
 }
 #footer .footer-details img {
   width: 150px;
 }
 #footer .footer-details .footer-social a {
   padding: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   transition: color 0.5s ease;
 }
 #footer .footer-details .footer-social a:hover {
   color: #fff;
 }
 #footer .footer-email {
-  border-right: 2px solid rgb(255, 0, 0);
+  border-right: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
 }
 #footer .footer-email h2 {
   color: #fff;
-  font-size: 2rem;
-  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 #footer .footer-email a {
-  margin-top: 1rem;
-  padding: 0.3rem 1rem;
+  margin: 0.3rem 0;
+  padding: 0.3rem 0.5rem;
+}
+#footer .footer-email a p {
+  display: inline;
+  color: #fff;
 }
 #footer .footer-contact h2 {
   color: #fff;
-  font-size: 2rem;
-  padding: 1rem 0;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

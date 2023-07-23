@@ -120,8 +120,8 @@ const itemsData = [
   },
   {
     itemName: 'item4',
-    header: 'Vintage',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    header: 'item4',
+    description: `item4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
       tempora dolor rerum vero quisquam alias dolorem praesentium rem ad 
       quos hic doloremque voluptas. Beatae, omnis veritatis, cumque consequuntur 
@@ -261,6 +261,7 @@ function popUpData(event) {
     imgElement.src = `img/items/${data.itemName}.png`;
     console.log(`img/items/${data.itemName}.png`);
     imgElement.alt = 'Modal Image';
+    console.log(imgElement.src)
     modalHeader.appendChild(imgElement);
 
     h2.textContent = data.header;
