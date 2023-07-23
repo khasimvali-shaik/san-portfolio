@@ -144,6 +144,7 @@ img {
 
 // Header
 #header {
+
   // Header-home
   &-home {
     background: $bg-img no-repeat center right / cover;
@@ -196,7 +197,37 @@ img {
       }
     }
   }
+
+  // Header-about
+  &-about {
+    background: $bg-img no-repeat center right / cover;
+    height: 40vh;
+    position: relative;
+
+    .down {
+      width: 30px;
+      height: 50px;
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    .top {
+      background: transparent;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $overlay-color;
+    }
+  }
 }
+
 
 .lead {
   font-size: 1.3rem;
@@ -433,6 +464,7 @@ img {
 
     &-details {
       border-right: 2px solid $txt-color;
+
       img {
         width: 150px;
       }
@@ -442,6 +474,7 @@ img {
           padding: 0 1rem;
           font-size: 2rem;
           transition: color 0.5s ease;
+
           &:hover {
             color: $primary-color;
           }
@@ -451,6 +484,7 @@ img {
 
     &-email {
       border-right: 2px solid $txt-color;
+
       h2 {
         color: $primary-color;
         font-size: 2rem;

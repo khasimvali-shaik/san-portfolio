@@ -72,6 +72,16 @@ window.onscroll = () => {
   }
 };
 
+function goToHome() {
+  const currentPageURL = window.location.pathname;
+
+  if (currentPageURL.endsWith('index.html')) {
+    window.scrollTo(0, 0);
+  } else {
+    window.location.href = 'index.html';
+  }
+}
+
 // pop-up images data
 const itemsData = [
   {

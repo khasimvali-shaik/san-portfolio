@@ -1,229 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>San Designer Studios</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="header-home">
-      <nav id="main-nav" class="top">
-        <img src="img/logo.png" alt="logo" id="logo" />
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Work.html">Work</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li>
-            <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></i></a>
-          </li>
-          <li>
-            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
-          </li>
-          <li>
-            <a href="#" class="snapchat"><i class="fa-brands fa-snapchat"></i></i></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="container">
-        <div class="header-content">
-          <h1>
-            I Am <span class="title-name">Saniya</span> Khan
-            <span
-              class="txt-type"
-              data-wait="2000"
-              data-words='["Fashion Designer", "Designer By Passion", "Creative", "Unique"]'
-            ></span>
-          </h1>
-          <p class="lead">
-            Specialized In Fashion Designing And Pattern Making
-          </p>
-          <a href="work.html" class="btn-light">View My Work</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>San Designer Studios</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header-home">
+    <nav id="main-nav" class="top">
+      <img src="img/logo.png" alt="logo" id="logo" onclick="goToHome()" />
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Work.html">Work</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li>
+          <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></i></a>
+        </li>
+        <li>
+          <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
+        </li>
+        <li>
+          <a href="#" class="snapchat"><i class="fa-brands fa-snapchat"></i></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="header-content">
+        <h1>
+          I Am <span class="title-name">Saniya</span> Khan
+          <span class="txt-type" data-wait="2000"
+            data-words='["Fashion Designer", "Designer By Passion", "Creative", "Unique"]'></span>
+        </h1>
+        <p class="lead">
+          Specialized In Fashion Designing And Pattern Making
+        </p>
+        <a href="work.html" class="btn-light">View My Work</a>
+      </div>
+    </div>
+    <a href="#about"><img class="down" src="img/down-arrow.png" alt="go down"></a>
+  </header>
+  <main>
+    <!-- Services -->
+    <section id="services">
+      <div class="services-header">
+        <h2>Specialized In</h2>
+        <p>Fashion desiging with theme based ideas and catalogues</p>
+        <span class="divide"></span>
+      </div>
+      <div class="services-content">
+        <div>
+          <i class="fa-solid fa-palette"></i>
+          <div>
+            <h2>Theme Based Designing</h2>
+            <p>
+              Discover your inner flair with our captivating theme based dresses, designed to let you express
+              your unique style on any occasion and elevate every moment of your life with our collections
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fa-solid fa-scissors"></i>
+          <div>
+            <h2>Pattern Making</h2>
+            <p>
+              Unlock the art of fashion design with our expert pattern making techniques,
+              empowering you to create stunning and bespoke garments that leave a lasting impression
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fa-solid fa-pencil"></i>
+          <div>
+            <h2>Illustrations</h2>
+            <p>
+              Immerse yourself in a world of creativity and imagination with our captivating fashion illustrations,
+              where artistry meets design to inspire your fashion journey
+            </p>
+          </div>
         </div>
       </div>
-      <a href="#about"><img class = "down" src="img/down-arrow.png" alt="go down"></a>
-    </header>
-    <main>
-      <!-- Services -->
-      <section id="services">
-        <div class="services-header">
-          <h2>Specialized In</h2>
-          <p>Fashion desiging with theme based ideas and catalogues</p>
-          <span class="divide"></span>
-        </div>
-        <div class="services-content">
-          <div>
-            <i class="fa-solid fa-palette"></i>
-            <div>
-              <h2>Theme Based Designing</h2>
-              <p>
-                Discover your inner flair with our captivating theme based dresses, designed to let you express 
-                your unique style on any occasion and elevate every moment of your life with our collections
-              </p>
-            </div>
-          </div>
-          <div>
-            <i class="fa-solid fa-scissors"></i>
-            <div>
-              <h2>Pattern Making</h2>
-              <p>
-                Unlock the art of fashion design with our expert pattern making techniques, 
-                empowering you to create stunning and bespoke garments that leave a lasting impression
-              </p>
-            </div>
-          </div>
-          <div>
-            <i class="fa-solid fa-pencil"></i>
-            <div>
-              <h2>Illustrations</h2>
-              <p>
-                Immerse yourself in a world of creativity and imagination with our captivating fashion illustrations, 
-                where artistry meets design to inspire your fashion journey
-              </p>
-            </div>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="img/about.png" alt="about image" />
           </div>
         </div>
-      </section>
-      <!-- About -->
-      <section id="about">
-        <div class="row">
-          <div class="column">
-            <div class="column-1">
-              <img src="img/about.png" alt="about image" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="column-2">
-              <h4>Saniya Khan</h4>
-              <h2>"I firmly believe that with the right fashion and style one can rule the world."</h2>
-              <p>
-                Step into the world of Saniya Khan's studios, a visionary fashion artist who redefines style 
-                with every creation. With an innate passion for aesthetics and an unwavering commitment to 
-                sustainability, their designs blend contemporary trends with timeless elegance. 
-                Saniya Khan's captivating collections inspire confidence, celebrate individuality, 
-                and leave an indelible mark on those who wear them. Explore their artistry and experience 
-                the magic of true elegance, where fashion becomes a powerful means of self-expression and 
-                empowerment. Welcome to a fashion journey like no other.
-              </p>
-              <a href="about.html" class="btn-dark">
-                <i class="fas fa-chevron-down"></i> Read More
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Work -->
-      <section id="work">
-        <div class="work-header">
-          <h2>My Works</h2>
-          <p>Dedicated and Quality products with passion</p>
-          <span class="divide"></span>
-        </div>
-        <div class="work-items">
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item1.png" alt="design image1" id="item1" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item2.png" alt="design image2" id="item2" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item3.png" alt="design image3" id="item3" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item4.png" alt="design image4" id="item4" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item5.png" alt="design image5" id="item5" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item6.png" alt="design image6" id="item6" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item7.png" alt="design image7" id="item7" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item8.png" alt="design image8" id="item8" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item9.png" alt="design image9" id="item9" >
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item1.png" alt="design image10" id="item10">
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item5.png" alt="design image11" id="item11">
-          </div>
-          <div class="item" onclick="popUpData(event)">
-            <img src="img/items/item7.png" alt="design image12" id="item12">
-          </div>
-        </div>
-        <div class="modal" id="modal">
-          <div class="modal-header" id="modal-header">
-          </div>
-          <div class="modal-body">
-            <h2 id="modal-header-data"></h2>
-            <p id="modal-description"></p>
-            <a href="work.html#hello" class="read-more"><i class="fa-solid fa-angle-down"></i> Read More</a>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-        </div>
-        <div id="overlay"></div>
-      </section>
-      <!-- Footer -->
-      <section id="footer">
-        <div class="footer-content">
-          <div class="footer-details">
-            <img src="img/logo.png" alt="logo" id="footer-logo" />
-            <div class="footer-social">
-              <a href="#" ><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" ><i class="fa-brands fa-facebook"></i></i></a>
-              <a href="#" ><i class="fa-brands fa-linkedin"></i></i></a>
-              <a href="#" ><i class="fa-brands fa-twitter"></i></i></a>
-            </div>
-          </div>
-          <div class="footer-email">
-            <h2>Get in touch</h2>
-            <p>Transform your style with trending designs</p>
-            <a href="mailto:pathansaniyakhan2003@gmail.com" class="btn-light"> 
-              <i class="fa-solid fa-envelope"></i> Send Email
+        <div class="column">
+          <div class="column-2">
+            <h4>Saniya Khan</h4>
+            <h2>"I firmly believe that with the right fashion and style one can rule the world."</h2>
+            <p>
+              Step into the world of Saniya Khan's studios, a visionary fashion artist who redefines style
+              with every creation. With an innate passion for aesthetics and an unwavering commitment to
+              sustainability, their designs blend contemporary trends with timeless elegance.
+              Saniya Khan's captivating collections inspire confidence, celebrate individuality,
+              and leave an indelible mark on those who wear them. Explore their artistry and experience
+              the magic of true elegance, where fashion becomes a powerful means of self-expression and
+              empowerment. Welcome to a fashion journey like no other.
+            </p>
+            <a href="about.html" class="btn-dark">
+              <i class="fas fa-chevron-down"></i> Read More
             </a>
           </div>
-          <div class="footer-contact">
-            <div class="contact-address">
-              <h2>Address <i class="fa-solid fa-location-dot"></i></h2>
-              <p>
-                12-5678-98, Indiranagar, Bangalore, Karnataka - 560038
-              </p>
-              <p>
-                34-3525-17, Arundalpet, Guntur, Andhra Pradesh - 522003
-              </p>
-              <p><i class="fa-solid fa-phone"></i> +91 - 9876543210</p>
-              <p><i class="fa-solid fa-envelope"></i> sanstudios@gmail.com</p>
-            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work">
+      <div class="work-header">
+        <h2>My Works</h2>
+        <p>Dedicated and Quality products with passion</p>
+        <span class="divide"></span>
+      </div>
+      <div class="work-items">
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item1.png" alt="design image1" id="item1">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item2.png" alt="design image2" id="item2">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item3.png" alt="design image3" id="item3">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item4.png" alt="design image4" id="item4">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item5.png" alt="design image5" id="item5">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item6.png" alt="design image6" id="item6">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item7.png" alt="design image7" id="item7">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item8.png" alt="design image8" id="item8">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item9.png" alt="design image9" id="item9">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item1.png" alt="design image10" id="item10">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item5.png" alt="design image11" id="item11">
+        </div>
+        <div class="item" onclick="popUpData(event)">
+          <img src="img/items/item7.png" alt="design image12" id="item12">
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal-header" id="modal-header">
+        </div>
+        <div class="modal-body">
+          <h2 id="modal-header-data"></h2>
+          <p id="modal-description"></p>
+          <a href="work.html#hello" class="read-more"><i class="fa-solid fa-angle-down"></i> Read More</a>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer-content">
+        <div class="footer-details">
+          <img src="img/logo.png" alt="logo" id="footer-logo" />
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
           </div>
         </div>
-        <p>Copyright &copy; 2023 - Portfolio</p>
-      </section>
+        <div class="footer-email">
+          <h2>Get in touch</h2>
+          <p>Transform your style with trending designs</p>
+          <a href="mailto:pathansaniyakhan2003@gmail.com" class="btn-light">
+            <i class="fa-solid fa-envelope"></i> Send Email
+          </a>
+        </div>
+        <div class="footer-contact">
+          <div class="contact-address">
+            <h2>Address <i class="fa-solid fa-location-dot"></i></h2>
+            <p>
+              12-5678-98, Indiranagar, Bangalore, Karnataka - 560038
+            </p>
+            <p>
+              34-3525-17, Arundalpet, Guntur, Andhra Pradesh - 522003
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +91 - 9876543210</p>
+            <p><i class="fa-solid fa-envelope"></i> sanstudios@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <p>Copyright &copy; 2023 - Portfolio</p>
+    </section>
   </main>
-    <script src="js/typewriter.js"></script>
-  </body>
+  <script src="js/typewriter.js"></script>
+</body>
+
 </html>
