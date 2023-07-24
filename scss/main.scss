@@ -1,5 +1,5 @@
-@import 'constants';
-@import 'utilities';
+@import "constants";
+@import "utilities";
 
 // Gneral Styles
 * {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   background: $primary-color;
   box-sizing: border-box;
@@ -144,7 +144,6 @@ img {
 
 // Header
 #header {
-
   // Header-home
   &-home {
     background: $bg-img no-repeat center right / cover;
@@ -164,7 +163,7 @@ img {
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -209,7 +208,7 @@ img {
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -219,7 +218,6 @@ img {
     }
   }
 }
-
 
 .lead {
   font-size: 1.3rem;
@@ -265,7 +263,7 @@ img {
     align-items: center;
 
     .column {
-      padding: 1rem 3rem;
+      padding: 1rem 1rem;
     }
 
     .column-1 {
@@ -273,7 +271,6 @@ img {
     }
 
     .column-2 {
-      // width: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -299,6 +296,124 @@ img {
   }
 }
 
+// About page
+#about-page {
+  max-width: $website-width;
+  margin: 2rem auto;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .column {
+      padding: 1rem 0;
+    }
+
+    .column-1 {
+      width: 400px;
+    }
+
+    .column-2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        line-height: 1.1;
+        font-size: 2rem;
+        margin: 0.5rem 0;
+        font-style: italic;
+      }
+
+      a {
+        width: 7rem;
+        padding: 0.3rem 1rem;
+        margin-top: 1.3rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      h4 {
+        color: $txt-color;
+        font-size: 1.3rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+// Statistics
+#stats {
+  background: $bg-img no-repeat center bottom / cover;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  text-align: center;
+
+  h2,
+  h3 {
+    color: $primary-color;
+    position: relative;
+    z-index: 3;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-color;
+    z-index: 1;
+  }
+}
+
+// Experince
+#experince {
+  max-width: $website-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 0;
+
+  & > h2 {
+    font-size: 1.5rem;
+  }
+
+  .year {
+    color: $txt-color;
+  }
+
+  .item {
+    padding: 1rem 0;
+  }
+
+  .flow {
+    width: 0.2rem;
+    height: 3rem;
+    background-color: $secondary-color;
+  }
+}
+
 // Work
 #work {
   max-width: $website-width;
@@ -317,7 +432,7 @@ img {
     margin-top: 1rem;
 
     .item {
-      margin: 1rem .3rem;
+      margin: 1rem 0.3rem;
       cursor: pointer;
 
       img {
@@ -450,7 +565,7 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 2rem;
-      padding: .8rem 0;
+      padding: 0.8rem 0;
     }
 
     &-details {
@@ -483,7 +598,7 @@ img {
 
       a {
         margin: 0.3rem 0;
-        padding: 0.3rem .5rem;
+        padding: 0.3rem 0.5rem;
 
         p {
           display: inline;

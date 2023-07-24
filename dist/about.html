@@ -43,7 +43,7 @@
     </header>
     <main>
         <!-- About -->
-        <section id="about">
+        <section id="about-page">
             <div class="row">
                 <div class="column">
                     <div class="column-1">
@@ -52,9 +52,11 @@
                 </div>
                 <div class="column">
                     <div class="column-2">
+                        <h3>SAN Designer Studios</h3>
                         <h4>Saniya Khan</h4>
+                        <h5>Graduated - BSc in Fashion Technology - Granden City University - 2024</h5>
                         <p>
-                            Welcome to our website, where creativity meets style and innovation finds
+                            Welcome to our studios, where creativity meets style and innovation finds
                             its perfect expression through the lens of a remarkable fashion designer.
                         </p>
 
@@ -74,7 +76,7 @@
                             shape their destiny as a trailblazing fashion virtuoso.
                         </p>
 
-                        <p>
+                        <p class="hidden">
                             Having honed their skills under the tutelage of renowned mentors and
                             experimented with diverse styles, Saniya Khan emerged as an innovative
                             force in the industry. Their designs are a captivating fusion of
@@ -82,7 +84,7 @@
                             understanding of the ever-evolving fashion landscape.
                         </p>
 
-                        <p>
+                        <p class="hidden">
                             What sets Saniya Khan apart is their unwavering commitment to
                             sustainability and ethical practices. Each collection is thoughtfully
                             crafted with an emphasis on environmentally friendly materials and
@@ -90,7 +92,7 @@
                             for conscious fashion in today's world.
                         </p>
 
-                        <p>
+                        <p class="hidden">
                             Throughout their illustrious career, Saniya Khan has received numerous
                             accolades and recognitions for their exceptional contributions to the
                             fashion world. Their creations have graced the runways of prestigious
@@ -98,7 +100,7 @@
                             devoted global following of fashion enthusiasts.
                         </p>
 
-                        <p>
+                        <p class="hidden">
                             With an unwavering dedication to empowering individuals through their
                             clothing choices, Saniya Khan believes that fashion is not merely about
                             appearance but also a means of expressing one's unique identity and
@@ -106,7 +108,7 @@
                             sophistication, and leave an indelible mark on those who wear them.
                         </p>
 
-                        <p>
+                        <p class="hidden">
                             As you explore Saniya Khan's captivating collections on our website, you
                             will witness the extraordinary synergy of art, culture, and fashion. From
                             stunning haute couture to chic ready-to-wear ensembles, each piece is a
@@ -114,7 +116,7 @@
                             boundaries of style.
                         </p>
 
-                        <p>
+                        <p class="hidden">
                             Join us in celebrating the artistry and brilliance of Saniya Khan.
                             Experience the magic they weave through their designs and be a part of a
                             fashion journey that transcends trends and captures the essence of true
@@ -122,51 +124,104 @@
                             beauty and discover your unique expression through Snaiya Khan's
                             extraordinary creations.
                         </p>
-                        <a href="about.html" class="btn-dark">
-                            <i class="fas fa-chevron-down"></i> Read More
+                        <a href="about.html" class="btn-dark" onclick="toggleParagraphs(event)">
+                            <i class="fas fa-chevron-down" id="read-more"></i> Read More
                         </a>
                     </div>
                 </div>
             </div>
-            .
+        </section>
+        <!-- Statistics -->
+        <section id="stats">
+            <div class="events">
+                <h2>15</h2>
+                <h3>No.of Events Participated</h3>
+            </div>
+            <div class="designs">
+                <h2>100+</h2>
+                <h3>Designs Illustrated</h3>
+            </div>
+            <div class="awards">
+                <h2>5</h2>
+                <h3>Awards Won</h3>
+            </div>
+            <div class="customers">
+                <h2>200+</h2>
+                <h3>Active Clients</h3>
+            </div>
+        </section>
+        <!-- Experience -->
+        <section id="experince">
+            <h2>Experience</h2>
+            <span class="divide"></span>
+            <div class="item">
+                <h2 class="year">2022</h2>
+                <h3>Designer - Avantra stores - 1 Year</h3>
+                <p>
+                    As a fashion designer, I am responsible for conceptualizing and creating innovative designs, 
+                    while collaborating with teams to bring my creative vision to life.
+                </p>
+            </div>
+            <span class="flow"></span>
+            <div class="item">
+                <h2 class="year">2023</h2>
+                <h3>Junior Designer - PUMA - internship - 6 Months</h3>
+                <p>
+                    My role involves innovatively translating artistic visions 
+                    into stunning and marketable designs while staying attuned to current trends and consumer preferences.
+                </p>
+            </div>
+            <span class="flow"></span>
+            <div class="item">
+                <h2 class="year">2023</h2>
+                <h3>Designer - Avantra stores - 1 year</h3>
+                <p>
+                    As a fashion designer, I am responsible for conceptualizing and creating innovative designs, 
+                    while collaborating with teams to bring my creative vision to life.
+                </p>
+            </div>
+            <a href="work.html" class="btn-dark">
+                See My Work
+            </a>
         </section>
         <!-- Footer -->
         <section id="footer">
             <div class="footer-content">
-                <div class="footer-details">
-                    <img src="img/logo.png" alt="logo" id="footer-logo" />
-                    <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
-                    </div>
+              <div class="footer-details">
+                <img src="img/logo.png" alt="logo" id="footer-logo" />
+                <div class="footer-social">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
                 </div>
-                <div class="footer-email">
-                    <h2>Get in touch</h2>
-                    <p>Transform your style with trending designs</p>
-                    <a href="mailto:pathansaniyakhan2003@gmail.com" class="btn-light">
-                        <i class="fa-solid fa-envelope"></i> Send Email
-                    </a>
+              </div>
+              <div class="footer-email">
+                <h2>Get in touch</h2>
+                <p>Transform your style with trending designs</p>
+                <a href="mailto:pathansaniyakhan2003@gmail.com" class="btn-light">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>Send Email</p>
+                </a>
+                <p>Copyright &copy; 2023 - Portfolio</p>
+              </div>
+              <div class="footer-contact">
+                <div class="contact-address">
+                  <h2>Address <i class="fa-solid fa-location-dot"></i></h2>
+                  <p>
+                    12-5678-98, Indiranagar, Bangalore, Karnataka - 560038
+                  </p>
+                  <p>
+                    34-3525-17, Arundalpet, Guntur, Andhra Pradesh - 522003
+                  </p>
+                  <p><i class="fa-solid fa-phone"></i> +91 - 9876543210</p>
+                  <p><i class="fa-solid fa-envelope"></i> sanstudios@gmail.com</p>
                 </div>
-                <div class="footer-contact">
-                    <div class="contact-address">
-                        <h2>Address <i class="fa-solid fa-location-dot"></i></h2>
-                        <p>
-                            12-5678-98, Indiranagar, Bangalore, Karnataka - 560038
-                        </p>
-                        <p>
-                            34-3525-17, Arundalpet, Guntur, Andhra Pradesh - 522003
-                        </p>
-                        <p><i class="fa-solid fa-phone"></i> +91 - 9876543210</p>
-                        <p><i class="fa-solid fa-envelope"></i> sanstudios@gmail.com</p>
-                    </div>
-                </div>
+              </div>
             </div>
-            <p>Copyright &copy; 2023 - Portfolio</p>
-        </section>
+          </section>
     </main>
-    <script src="js/typewriter.js"></script>
+    <script src="js/about.js"></script>
 </body>
 
 </html>
