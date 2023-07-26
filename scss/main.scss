@@ -549,6 +549,115 @@ img {
   }
 }
 
+// work-slider
+#slider {
+  height: 80vh;
+  overflow: hidden;
+  margin: 5rem 0 2rem 0;
+  position: relative;
+
+  .sliders {
+    width: 600%;
+    height: 100%;
+    display: flex;
+
+    input {
+      display: none;
+    }
+
+    .slide {
+      flex: 1;
+      transition: 2s ease-in-out;
+
+      img {
+        width: 100%;
+        // height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+
+    #radio1:checked ~ .slide {
+      transform: translateX(0);
+    }
+    #radio2:checked ~ .slide {
+      transform: translateX(-100%);
+    }
+    #radio3:checked ~ .slide {
+      transform: translateX(-200%);
+    }
+    #radio4:checked ~ .slide {
+      transform: translateX(-300%);
+    }
+    #radio5:checked ~ .slide {
+      transform: translateX(-400%);
+    }
+    #radio6:checked ~ .slide {
+      transform: translateX(-500%);
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1 {
+      background: $txt-color;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2 {
+      background: $txt-color;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3 {
+      background: $txt-color;
+    }
+    #radio4:checked ~ .navigation-auto .auto-btn4 {
+      background: $txt-color;
+    }
+    #radio5:checked ~ .navigation-auto .auto-btn5 {
+      background: $txt-color;
+    }
+    #radio6:checked ~ .navigation-auto .auto-btn6 {
+      background: $txt-color;
+    }
+
+    .navigation-auto {
+      position: absolute;
+      bottom: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        width: 1.6rem;
+        height: 0.45rem;
+        border-radius: 10px;
+        margin: 0 0.55rem;
+        cursor: pointer;
+        transition: 1s;
+      }
+    }
+  }
+
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .manual-btn {
+      width: 1.5rem;
+      height: 0.3rem;
+      border: 2px solid $txt-color;
+      border-radius: 10px;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      transition: 1s;
+
+      &:hover {
+        background-color: $txt-color;
+      }
+    }
+  }
+}
+
 // Footer
 #footer {
   background-color: $bg-color;
