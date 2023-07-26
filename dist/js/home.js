@@ -85,7 +85,7 @@ function goToHome() {
 // pop-up images data
 const itemsData = [
   {
-    itemName: "item1",
+    itemName: "person1",
     header: "Western",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -98,7 +98,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item2",
+    itemName: "person2",
     header: "Traditional",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -106,7 +106,7 @@ const itemsData = [
       quos hic doloremque voluptas. Beatae, omnis veritatis, cumque consequuntur`,
   },
   {
-    itemName: "item3",
+    itemName: "person3",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -119,7 +119,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item4",
+    itemName: "person4",
     header: "item4",
     description: `item4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -132,7 +132,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item5",
+    itemName: "person5",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -145,7 +145,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item6",
+    itemName: "person6",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -158,7 +158,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item7",
+    itemName: "person7",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -171,7 +171,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item8",
+    itemName: "person8",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -184,7 +184,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item9",
+    itemName: "person9",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -197,7 +197,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item10",
+    itemName: "person10",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -210,7 +210,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item11",
+    itemName: "person11",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -223,7 +223,7 @@ const itemsData = [
       reprehenderit similique! Odit corporis doloribus natus itaque commodi?`,
   },
   {
-    itemName: "item12",
+    itemName: "person12",
     header: "Vintage",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Inventore facilis, magni quidem explicabo nobis nulla delectus nam 
@@ -256,12 +256,13 @@ function popUpData(event) {
     modal.classList.add(active);
     overlay.classList.add(active);
 
+    const anchorTag = document.getElementById("goToWork");
+    anchorTag.href = `work.html#${data.itemName}`;
+
     const imgElement = document.createElement("img");
     imgElement.classList.add("item-img");
-    imgElement.src = `img/items/${data.itemName}.png`;
-    console.log(`img/items/${data.itemName}.png`);
+    imgElement.src = `img/models/${data.itemName}.jpg`;
     imgElement.alt = "Modal Image";
-    console.log(imgElement.src);
     modalHeader.appendChild(imgElement);
 
     h2.textContent = data.header;
