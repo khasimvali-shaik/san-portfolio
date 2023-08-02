@@ -895,6 +895,113 @@ img {
   font-size: 1.3rem;
 }
 
+#model-info .work-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  z-index: 22;
+  background-color: #020202;
+  height: 90vh;
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#model-info .work-modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#model-info .work-modal-body {
+  position: relative;
+  padding: 1rem 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+#model-info .work-modal-body p {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-align: start;
+  color: #fff;
+}
+
+#model-info .work-modal-body h2 {
+  color: #ff0000;
+  font-size: 2rem;
+}
+
+#model-info .work-modal-body .read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+#model-info .work-modal-body .read-more:hover {
+  color: #666565;
+}
+
+#model-info .work-modal-body .close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#model-info .work-modal-body .close-button:hover {
+  color: #666565;
+}
+
+#model-info .work-modal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#model-info .work-modal th,
+#model-info .work-modal td {
+  padding: 10px;
+  text-align: left;
+}
+
+#model-info .work-modal th {
+  background-color: #666565;
+  color: #fff;
+}
+
+#model-info .work-modal tr {
+  background-color: #fff;
+}
+
+#model-info #work-overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 21;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#model-info #work-overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
 #footer {
   background-color: #020202;
   height: 250px;

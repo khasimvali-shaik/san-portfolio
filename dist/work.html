@@ -118,7 +118,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person2">
+                    <a class="btn-dark" id="person2" personData = "person1" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -147,7 +147,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person3">
+                    <a class="btn-dark" id="person3" personData = "person2" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -176,7 +176,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person4">
+                    <a class="btn-dark" id="person4" personData = "person3" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -205,7 +205,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person5">
+                    <a class="btn-dark" id="person5" personData = "person4" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -234,7 +234,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person6">
+                    <a class="btn-dark" id="person6" personData = "person5" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -263,7 +263,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person7">
+                    <a class="btn-dark" id="person7" personData = "person6" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -292,7 +292,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person8">
+                    <a class="btn-dark" id="person8" personData = "person7" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -321,7 +321,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person9">
+                    <a class="btn-dark" id="person9" personData = "person8" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -350,7 +350,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person10">
+                    <a class="btn-dark" id="person10" personData = "person9" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -379,7 +379,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person11">
+                    <a class="btn-dark" id="person11" personData = "person10" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -408,7 +408,7 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark" id="person12">
+                    <a class="btn-dark" id="person12" personData = "person11" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
@@ -437,12 +437,21 @@
                         molestiae esse inventore tenetur neque culpa minima veritatis incidunt eos, 
                         quas quod et.
                     </p>
-                    <a href="about.html" class="btn-dark">
+                    <a class="btn-dark" personData = "person12" onclick="popUpData(event)">
                       <i class="fas fa-chevron-down"></i> Read More
                     </a>
                   </div>
                 </div>
             </div>
+            <div class="work-modal" id="work-modal">
+              <div class="work-modal-body">
+                <h2 id="work-modal-header-data"></h2>
+                <p id="work-modal-description"></p>
+                <div id="work-modal-table"></div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+            </div>
+            <div id="work-overlay"></div>
         </section>
         <!-- Footer -->
         <section id="footer">
