@@ -68,10 +68,10 @@ const social = document.querySelector(".social-nav-items.active");
 window.onscroll = () => {
   if (window.pageYOffset > 200) {
     navbar.classList.remove("top");
-    // social.classList.remove("active");
+    social.classList.remove("active");
   } else {
     navbar.classList.add("top");
-    // social.classList.add("active");
+    social.classList.add("active");
   }
 };
 
