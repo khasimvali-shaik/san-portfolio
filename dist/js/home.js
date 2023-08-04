@@ -64,11 +64,14 @@ function init() {
 }
 
 const navbar = document.getElementById("main-nav");
+const social = document.querySelector(".social-nav-items.active");
 window.onscroll = () => {
   if (window.pageYOffset > 200) {
     navbar.classList.remove("top");
+    // social.classList.remove("active");
   } else {
     navbar.classList.add("top");
+    // social.classList.add("active");
   }
 };
 
@@ -281,3 +284,23 @@ function popUpData(event) {
     modalHeader.innerHTML = "";
   });
 }
+
+const navButton = () => {
+  const burger = document.querySelector(".burger-menu");
+  const nav = document.querySelector(".main-nav-items");
+  const overlay = document.getElementById("burger-overlay");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    burger.classList.toggle("toggle");
+    overlay.classList.toggle("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    burger.classList.toggle("toggle");
+    overlay.classList.toggle("active");
+  });
+};
+
+navButton();

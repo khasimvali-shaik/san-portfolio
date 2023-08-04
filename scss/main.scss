@@ -60,8 +60,28 @@ img {
   transition: 1s;
   z-index: 20;
 
+  .nav-items {
+    display: flex;
+  }
+
+  .burger-menu {
+    margin-right: 1rem;
+    cursor: pointer;
+    display: none;
+
+    div {
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: #fff;
+      margin: 0.2rem;
+      border-radius: 0.1rem;
+    }
+  }
+
   ul {
     display: flex;
+    padding: 0;
+    margin: 0;
   }
 
   li {
@@ -75,70 +95,6 @@ img {
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: all 0.5s;
-
-    &:hover {
-      border-color: $primary-color;
-    }
-
-    &.current {
-      border-color: $secondary-color;
-    }
-
-    // Instagram
-    &.insta i {
-      transition: all 0.4s ease;
-    }
-
-    &.insta:hover {
-      border-color: transparent;
-      color: #eb5b5b;
-    }
-
-    &.insta:hover i {
-      transform: scale(2);
-    }
-
-    // facebook
-    &.facebook i {
-      transition: all 0.4s ease;
-    }
-
-    &.facebook:hover {
-      border-color: transparent;
-      color: #522fcf;
-    }
-
-    &.facebook:hover i {
-      transform: scale(2);
-    }
-
-    // LinkedIn
-    &.linkedin i {
-      transition: all 0.4s ease;
-    }
-
-    &.linkedin:hover {
-      border-color: transparent;
-      color: #3923b6;
-    }
-
-    &.linkedin:hover i {
-      transform: scale(2);
-    }
-
-    // Sanpchat
-    &.snapchat i {
-      transition: all 0.4s ease;
-    }
-
-    &.snapchat:hover {
-      border-color: transparent;
-      color: #f7e70b;
-    }
-
-    &.snapchat:hover i {
-      transform: scale(2);
-    }
   }
 }
 
@@ -908,7 +864,6 @@ img {
     &-details {
       img {
         width: 150px;
-        // height: 150px;
       }
 
       .footer-social {
