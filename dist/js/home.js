@@ -64,14 +64,14 @@ function init() {
 }
 
 const navbar = document.getElementById("main-nav");
-const social = document.querySelector(".social-nav-items.active");
+const social = document.querySelector(".social-nav-items.home");
 window.onscroll = () => {
   if (window.pageYOffset > 200) {
     navbar.classList.remove("top");
-    social.classList.remove("active");
+    social.classList.remove("home");
   } else {
     navbar.classList.add("top");
-    social.classList.add("active");
+    social.classList.add("home");
   }
 };
 
