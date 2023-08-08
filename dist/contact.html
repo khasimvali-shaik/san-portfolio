@@ -25,10 +25,10 @@
         <ul class="main-nav-items">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="Work.html" class="current">Work</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Work.html">Work</a></li>
+          <li><a href="Contact.html" class="current">Contact</a></li>
         </ul>
-        <ul class="social-nav-items">
+        <ul class="social-nav-items contact">
           <li>
             <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
           </li>
@@ -57,8 +57,16 @@
   </header>
   <main>
     <section id="contact">
-      <div class="contact-img">
-        <img src="./img/contact.jpg" alt="contact">
+      <div class="contact-form">
+        <h2>Request Call back</h2>
+        <div id="contact-form">
+          <form action="https://formspree.io/mpzyqdng" method="POST">
+            <input type="text" name="name" placeholder="Name ex: John Deo" required>
+            <input type="email" name="_replyto" placeholder="Email ex: johndeo@example.com" required>
+            <input type="tel" name="phone" placeholder="Phone ex: 9876543210" required>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
       <div class="map">
         <iframe

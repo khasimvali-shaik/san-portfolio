@@ -69,9 +69,11 @@ window.onscroll = () => {
   if (window.pageYOffset > 200) {
     navbar.classList.remove("top");
     social.classList.remove("home");
+    social.classList.add("hide");
   } else {
     navbar.classList.add("top");
     social.classList.add("home");
+    social.classList.remove("hide");
   }
 };
 

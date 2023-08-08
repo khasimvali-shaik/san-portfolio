@@ -74,6 +74,52 @@
   }
 }
 
+// Contact page only
+@media (max-width: 1300px) {
+  // Contact page
+  #contact {
+    margin: 0 auto;
+    .contact-form {
+      margin-bottom: 2rem;
+      width: 30%;
+    }
+    .map {
+      margin-right: 2rem;
+      iframe {
+        width: 600px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+// Work slider only
+@media (max-width: 930px) {
+  #slider {
+    height: 80vh;
+    margin-bottom: 0;
+    .sliders {
+      .slide {
+        img {
+          height: 100%;
+        }
+      }
+      .navigation-auto {
+        bottom: 7rem;
+      }
+    }
+
+    .navigation-manual {
+      margin-top: -120px;
+      .manual-btn {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
 // Tablets & Smaller
 @media (max-width: 850px) {
   // Logo
@@ -164,8 +210,25 @@
         padding-top: 30%;
 
         h1 {
-          font-size: 3rem;
+          font-size: 3.5rem;
           line-height: 2;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+        .txt-type {
+          display: block;
+        }
+      }
+    }
+    &-contact {
+      .container {
+        h1 {
+          margin-top: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
         }
       }
     }
@@ -325,25 +388,6 @@
     }
   }
 
-  // Work page slider
-  #slider {
-    height: 70vh;
-    .sliders {
-      .navigation-auto {
-        bottom: 7rem;
-      }
-    }
-
-    .navigation-manual {
-      margin-top: -120px;
-      .manual-btn {
-        &:hover {
-          background-color: transparent;
-        }
-      }
-    }
-  }
-
   // Work page model-info
   #model-info {
     .row {
@@ -380,32 +424,6 @@
         h2 {
           font-size: 1.8rem;
         }
-
-        .read-more {
-          display: inline-block;
-          margin-top: 1rem;
-          color: $primary-color;
-
-          &:hover {
-            color: $secondary-color;
-          }
-        }
-
-        .close-button {
-          position: absolute;
-          top: 0.5rem;
-          right: 1rem;
-          cursor: pointer;
-          border: none;
-          outline: none;
-          background: none;
-          color: $primary-color;
-          font-size: 2rem;
-
-          &:hover {
-            color: $secondary-color;
-          }
-        }
       }
     }
   }
@@ -413,6 +431,20 @@
   // Contact page
   #contact {
     flex-direction: column;
+    margin: 1rem 0;
+    .contact-form {
+      margin-bottom: 2rem;
+      width: 80%;
+
+      input {
+        font-size: 1.3rem;
+      }
+
+      button {
+        padding: 0.7rem 2.5rem;
+        font-size: 1.3rem;
+      }
+    }
     .map {
       margin: 0;
       iframe {
@@ -423,21 +455,38 @@
   }
 }
 
+// Mobiles & Smaller
 @media (max-width: 450px) {
   // Navigation bar
   #main-nav {
-    .social-nav-items {
+    .social-nav-items.hide {
       display: none;
     }
     .social-nav-items.home {
       position: absolute;
-      top: 800%;
+      top: 850%;
       right: 50%;
       transform: translate(50%, -50%);
 
       li {
         padding: 0 1.2rem;
       }
+    }
+    .social-nav-items.about {
+      position: absolute;
+      top: 300%;
+      right: 50%;
+      transform: translate(50%, -50%);
+
+      li {
+        padding: 0 1.2rem;
+      }
+    }
+    .social-nav-items.work {
+      display: none;
+    }
+    .social-nav-items.contact {
+      display: none;
     }
   }
 
@@ -461,6 +510,18 @@
         }
       }
     }
+
+    &-contact {
+      .container {
+        h1 {
+          margin-top: 5rem;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 
   // Home-about
@@ -468,6 +529,153 @@
     .row {
       .column-1 {
         width: 200px;
+      }
+      .column-2 {
+        h4 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  // Home-work
+  #work {
+    .work-header {
+      p {
+        text-align: center;
+      }
+    }
+    .work-items {
+      flex-wrap: wrap;
+      .item {
+        flex: 1 0 90%;
+        margin: 0 0.3rem;
+      }
+    }
+
+    .modal {
+      height: 70vh;
+      &-body {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  // footer
+  #footer {
+    height: 650px;
+    .footer {
+      &-content {
+        grid-template-columns: 1fr;
+        padding-top: 1.2rem;
+        border: none;
+      }
+
+      &-details {
+        width: 95%;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 2px solid $txt-color;
+        img {
+          width: 100px;
+        }
+        .footer-social {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-contact {
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      &-email {
+        width: 95%;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 2px solid $txt-color;
+        a {
+          margin: 0.3rem 0;
+          padding: 0.2rem 0.4rem;
+          i {
+            font-size: 0.9rem;
+          }
+        }
+        & p:last-child {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  // About page
+  #about-page {
+    .row {
+      flex-direction: column;
+      .column {
+        .column-1 {
+          width: 300px;
+        }
+
+        .column-2 {
+          h3,
+          h4 {
+            font-size: 1.8rem;
+          }
+
+          h5 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  #stats {
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  // work page
+  #model-info {
+    .model-info-header {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        margin: 0 0.3rem;
+      }
+    }
+
+    .work-modal {
+      height: 80vh;
+      overflow-y: scroll;
+
+      &-body {
+        position: relative;
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      table {
+        overflow-x: scroll;
+        display: block;
+        table-layout: fixed;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // Contact page
+  #contact {
+    .map {
+      margin: 0;
+      iframe {
+        width: 300px;
+        height: 400px;
       }
     }
   }

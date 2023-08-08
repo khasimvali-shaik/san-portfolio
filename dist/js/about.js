@@ -1,9 +1,14 @@
 const navbar = document.getElementById("main-nav");
+const social = document.querySelector(".social-nav-items.about");
 window.onscroll = () => {
-  if (window.pageYOffset > 200) {
+  if (window.pageYOffset > 100) {
     navbar.classList.remove("top");
+    social.classList.remove("about");
+    social.classList.add("hide");
   } else {
     navbar.classList.add("top");
+    social.classList.add("about");
+    social.classList.remove("hide");
   }
 };
 

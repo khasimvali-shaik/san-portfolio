@@ -749,16 +749,6 @@ img {
         font-size: 2rem;
       }
 
-      .read-more {
-        display: inline-block;
-        margin-top: 1rem;
-        color: $primary-color;
-
-        &:hover {
-          color: $secondary-color;
-        }
-      }
-
       .close-button {
         position: absolute;
         top: 0.5rem;
@@ -826,9 +816,37 @@ img {
   justify-content: space-between;
   align-items: center;
 
-  .contact-img {
-    img {
-      width: 400px;
+  .contact-form {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      border: 1px solid $bg-color;
+      outline: none;
+      padding: 0.8rem 0.2rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      background-color: $bg-color;
+      color: $primary-color;
+      font-size: 1rem;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
     }
   }
 
