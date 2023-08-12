@@ -731,18 +731,9 @@ img {
       transform: translate(-50%, -50%) scale(1);
     }
 
-    &-body {
+    &-header {
       position: relative;
-      padding: 1rem 0;
       text-align: center;
-      padding: 2rem;
-
-      p {
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        text-align: start;
-        color: $primary-color;
-      }
 
       h2 {
         color: $txt-color;
@@ -764,6 +755,24 @@ img {
           color: $secondary-color;
         }
       }
+    }
+
+    &-body {
+      position: relative;
+      text-align: center;
+      padding: 0 2rem;
+
+      p {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        text-align: start;
+        color: $primary-color;
+      }
+
+      // h2 {
+      //   color: $txt-color;
+      //   font-size: 2rem;
+      // }
     }
 
     table {

@@ -653,8 +653,21 @@
       height: 80vh;
       overflow-y: scroll;
 
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        background-color: $secondary-txt-color;
+        z-index: 1;
+
+        .close-button {
+          color: $bg-color;
+        }
+      }
+
       &-body {
-        position: relative;
         p {
           font-size: 1rem;
         }
