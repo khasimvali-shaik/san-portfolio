@@ -659,12 +659,8 @@
         justify-content: center;
         position: sticky;
         top: 0;
-        background-color: $secondary-txt-color;
+        background-color: $bg-color;
         z-index: 1;
-
-        .close-button {
-          color: $bg-color;
-        }
       }
 
       &-body {

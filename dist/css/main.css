@@ -1661,11 +1661,8 @@ img {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #f0f0f0;
+    background-color: #020202;
     z-index: 1;
-  }
-  #model-info .work-modal-header .close-button {
-    color: #020202;
   }
   #model-info .work-modal-body p {
     font-size: 1rem;
