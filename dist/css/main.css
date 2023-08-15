@@ -1665,7 +1665,7 @@ img {
     z-index: 1;
   }
   #model-info .work-modal-body p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #model-info .work-modal table {
     overflow-x: scroll;
