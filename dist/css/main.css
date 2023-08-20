@@ -1503,7 +1503,7 @@ img {
   }
   #main-nav .social-nav-items.home {
     position: absolute;
-    top: 850%;
+    top: 750%;
     right: 50%;
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
